@@ -17,7 +17,7 @@ def index():
     soup = BeautifulSoup(response, 'lxml')
    
     data = []
-    trending_soup =  soup.select("ul.switch-block.list-episode-item li")
+    trending_soup =  soup.select("ul.switch-block.list-episode-item li")[0:50]
    
     print(type(data))
     return jsonify({"links":list_scraper(trending_soup)})
