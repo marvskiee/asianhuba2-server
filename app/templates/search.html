@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for r in result %} 
+        <h2>{{r.title}}</h2>
+        <p>{{r.artist}}</p>
+        <br>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for r in result %} 
+    <h2>{{r.data}}</h2>
+    <p>{{r.status}}</p>
+    <br>
+    {% endfor %}
+{% endblock %}
